@@ -12,6 +12,26 @@ h2 {
     font-size: 30px;
 }
 
+hr {
+    margin: 5px 0px;
+    width: 20%;
+    border: 1px solid black;
+    position: relative;
+}
+
+hr:before {
+    content: "";
+    width: 30px;
+    height: 4px;
+    background-color: #000;
+    position: absolute;
+    left: 4px;
+    top: 0;
+    transform: translateY(-50%);
+
+}
+
+
 .centering {
     display: flex;
     justify-content: center;
@@ -58,6 +78,49 @@ h2 {
     margin: 0 auto;
 }
 
+.main-heading {
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 4vw;
+    text-align: center;
+    z-index: 2;
+}
+
+.main-heading::before {
+
+    content: attr(s-heading);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-text-stroke: 2px #eee;
+    color: transparent;
+    /* opacity: .1; */
+    font-size: 6vw;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    z-index: -1;
+
+}
+
+
+.heading2 {
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
+}
+
+.heading:before {
+    content: '';
+    width: 120px;
+    height: 15px;
+    position: absolute;
+    bottom: 3px;
+    left: 0;
+    background-color: #eee;
+    z-index: -1;
+}
+
+
 
 .large-padding {
     padding: 40px 0;
@@ -67,7 +130,7 @@ h2 {
     padding: 20px 0;
 }
 
-.to-top{
+.to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -83,7 +146,9 @@ h2 {
 
 html {
     scroll-behavior: smooth;
-  }
+
+}
+
 
 /*=====================================  */
 
@@ -93,6 +158,7 @@ html {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
 
 ::selection {
     background-color: #000;
@@ -450,25 +516,6 @@ nav .copyright {
     position: relative;
 }
 
-.about h1 {
-    position: relative;
-    margin-bottom: 20px;
-}
-
-.about h1:before {
-    content: "About me";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-text-stroke: 2px black;
-    color: transparent;
-    opacity: .1;
-    font-size: 80px;
-    transform: translate(-50%, -50%);
-
-}
-
-
 .about .bio {
 
     width: 50%;
@@ -538,24 +585,6 @@ nav .copyright {
     font-size: 16px;
 }
 
-.about .bio hr {
-    margin: 5px 0px;
-    width: 20%;
-    border: 1px solid black;
-    position: relative;
-}
-
-.about .bio hr:before{
-    content: "";
-    width: 30px;
-    height: 4px;
-    background-color: #000;
-    position: absolute;
-    left: 4px;
-    top: 0;
-    transform: translateY(-50%);
-
-}
 
 .about .bio p {
     margin: 20px 0;
@@ -563,22 +592,6 @@ nav .copyright {
     text-indent: 20px;
 }
 
-.about .bio h2 {
-    text-transform: capitalize;
-    position: relative;
-    z-index: 1;
-}
-
-.about .bio h2:before {
-    content: '';
-    width: 120px;
-    height: 15px;
-    position: absolute;
-    bottom: 3px;
-    left: 0;
-    background-color: #eee;
-    z-index: -1;
-}
 
 .about .bio .p-bio {
     height: 200px;
@@ -598,3 +611,129 @@ nav .copyright {
 }
 
 /* End About */
+
+
+
+
+
+/* Start Quotes */
+.b-quote {
+    height: 300px;
+    width: 100%;
+    color: white;
+    background: black url("./imgs/wall5.jpg") center fixed;
+    background-size: cover;
+    position: relative;
+    filter: grayscale(100%);
+}
+
+.b-quote::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    left: 0;
+    top: 0;
+}
+
+.b-quote blockquote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2vw;
+}
+
+.b-quote span {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+}
+
+.b-quote span::before {
+    content: "";
+    width: 100px;
+    height: 15px;
+    background-color: indianred;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    z-index: -1;
+    transform: translateX(-50%);
+}
+
+.b-quote blockquote:before {
+    content: "\f10e";
+    font-family: FontAwesome;
+    font-size: 40px;
+    position: absolute;
+    right: -75px;
+    bottom: -15px;
+    color: white;
+}
+
+.b-quote blockquote:after {
+    content: "\f10d";
+    font-family: FontAwesome;
+    font-size: 40px;
+    position: absolute;
+    left: -75px;
+    top: -15px;
+    color: white;
+}
+
+
+/* End Quotes */
+
+/* Start Map */
+
+
+.map {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    position: relative;
+}
+
+.map .where-find-me {
+    float: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 350px;
+}
+.map .where-find-me h3{
+    font-size: 16px;
+}
+
+.map .where-find-me p{
+    width: 90%;
+    padding-left: 10px;
+}
+
+
+
+.map .frame {
+    float: right;
+    width: 50%;
+    height: 400px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    z-index: 1;
+    position: relative;
+
+}
+
+.map .dots {
+    width: 200px;
+    height: 500px;
+    position: absolute;
+    right: 133px;
+    top: 69px;
+    z-index: 1;
+}
+
+
+/* End Map */
