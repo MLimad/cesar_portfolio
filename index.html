@@ -66,12 +66,17 @@
                     <a href="#about">
                         <li class="link"><i class="fa fa-coffee" aria-hidden="true"></i> About me</li>
                     </a>
-                    <li class="link"><i class="fa fa-diamond" aria-hidden="true"></i> Skills</li>
+                    <a href="#skills">
+                        <li class="link"><i class="fa fa-diamond" aria-hidden="true"></i> Skills</li>
+
+                    </a>
                     <li class="link"><i class="fa fa-desktop" aria-hidden="true"></i> Projects</li>
                     <a href="#find-me">
                         <li class="link"><i class="fa fa-map-marker" aria-hidden="true"></i> Find Me</li>
                     </a>
-                    <li class="link"><i class="fa fa-paper-plane" aria-hidden="true"></i> Contact</li>
+                    <a href="#contact">
+                        <li class="link"><i class="fa fa-paper-plane" aria-hidden="true"></i> Contact</li>
+                    </a>
                 </ul>
 
                 <!-- Copyright In Sidebar -->
@@ -93,7 +98,7 @@
             <div class="r-content">
                 <img src="./imgs/coding.png" alt="" srcset="">
                 <h2>Hire Me Now !</h2>
-                <a href="#" class="button">Hire Me</a>
+                <a href="#contact" class="button">Hire Me</a>
             </div>
         </div>
 
@@ -101,33 +106,37 @@
     <!-- End Header -->
 
     <!-- Start  About -->
-    <div class="about large-padding" id="about">
-        <div class="container ">
-            <div class="small-padding">
+    <div class="large-padding">
+        <div class="about" id="about">
+            <div class="container">
                 <h1 class="main-heading" s-heading="About me">About Me</h1>
+                <img class="dots" src="./imgs/dots-lg.svg" alt="">
 
-            </div>
-            <img class="dots" src="./imgs/dots-lg.svg" alt="">
-
-            <div class="img-bio">
-                <img src="./imgs/profile.jpg" alt="" srcset="">
-            </div>
-
-            <div class="bio">
-                <h2 class="heading2">Cesar Rincon</h2>
-                <hr>
-                <div class="p-bio">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sit aliquam animi corporis
-                        ducimus
-                        harum autem, id cumque ipsa repudiandae!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsa incidunt quis aperiam, sunt
-                        doloribus repellendus perspiciatis reprehenderit sapiente molestiae.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam numquam fuga, dolor accusamus.
-                    </p>
+                <div class="flex">
+                    <div class="img-bio">
+                        <img src="./imgs/profile.jpg" alt="" srcset="">
+                    </div>
+                    <div class="bio">
+                        <h2 class="heading2">Cesar Rincon</h2>
+                        <hr>
+                        <div class="p-bio">
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis sit aliquam animi
+                                corporis
+                                ducimus
+                                harum autem, id cumque ipsa repudiandae!</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ipsa incidunt quis
+                                aperiam,
+                                sunt
+                                doloribus repellendus perspiciatis reprehenderit sapiente molestiae.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam numquam fuga, dolor
+                                accusamus.
+                            </p>
+                        </div>
+                        <a href="" class="button more">Read more</a>
+                    </div>
                 </div>
-                <a href="" class="button more">Read more</a>
-            </div>
 
+            </div>
         </div>
     </div>
     <!-- End About -->
@@ -135,45 +144,98 @@
     <!-- Start Quotes -->
     <div class="b-quote t-center ">
         <div class="container">
-            <div class="large-padding">
-                <blockquote>
-                    Don't wait. The time will never be just right.
-                    <span> Napoleon Hill</span>
-                </blockquote>
-            </div>
+
+            <blockquote>
+                Don't wait. The time will never be just right.
+                <span> Napoleon Hill</span>
+            </blockquote>
+
         </div>
     </div>
     <!-- End Quotes -->
 
-    <!-- Start Map -->
-    <div class="map" id="find-me">
-        <div class="container">
-            <div class="large-padding">
-                <div class="small-padding">
-                    <h1 class="main-heading" s-heading="Find me">Find Me</h1>
+    <!-- Start Skills -->
+
+    <div class="large-padding">
+        <div class="skills" id="skills">
+            <div class="container">
+                <h1 class="main-heading" s-heading="Skills">Skills</h1>
+                <h2 class="heading-2">FrontEnd</h2>
+                <hr>
+                <div class="flex row">
+
+                    <div class="item centering"  percent="85%" ><img src="./imgs/icons/html.png" alt="HTML5"></div>
+                    <div class="item centering" percent="60%"><img src="./imgs/icons/css.png" alt="CSS3"></div>
+                    <div class="item centering" percent="45%"><img src="./imgs/icons/js.png" alt="Javascript"></div>
+
+
+                    <div class="flex">
+                        <div class="item centering" percent="80%"><img src="./imgs/icons/bootstrap.png" alt="bootstrap"></div>
+                        <div class="item centering" percent="65%"><img src="./imgs/icons/sass.png" alt="Sass"></div>
+                        <div class="item centering" percent="40%"><img src="./imgs/icons/react.png" alt="React"></div>
+                    </div>
+
                 </div>
-                <div class="where-find-me">
+
+
+                
+
+                <h2 class="heading-2">BackEnd</h2>
+                <hr>
+                <div class="flex row">
+                    <div class="item centering" percent="55%"><img src="./imgs/icons/php.png" alt="PHP"></div>
+                    <div class="item centering" percent="66%"><img src="./imgs/icons/python.png" alt="Python"></div>
+                    <div class="item centering" percent="75%"><img src="./imgs/icons/mysql.png" alt="Mysql"></div>
+                </div>
+
+                <h2 class="heading-2">Other Tools</h2>
+                <hr>
+                <div class="flex row">
+                    <div class="item centering" percent="70%"><img src="./imgs/icons/api.png" alt="API"></div>
+                    <div class="item centering" percent="85%"><img src="./imgs/icons/json.png" alt="Json"></div>
+                    <div class="item centering" percent="90%"><img src="./imgs/icons/github.png" alt="Github"></div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <!-- End Skills -->
+
+    <div class="test"></div>
+
+    <!-- Start Map -->
+    <div class="large-padding">
+        <div class="map" id="find-me">
+            <div class="container">
+                <h1 class="main-heading" s-heading="Find me">Find Me</h1>
+
+                <div class="flex">
+                    <div class="where-find-me">
                         <div>
                             <h2 class="heading2">Where Can you Find Me ?</h2>
-                        <hr>
+                            <hr>
                         </div>
 
                         <div>
-                                <h3>Address </h3>
-                                <p>
+                            <h3>Address </h3>
+                            <p>
 
-                                    <i class="fa fa-map-marker" aria-hidden="true"></i><small> Morocco,Casablanca 20670</small>
-                                    <br>
-                                    <i class="fa fa-home" aria-hidden="true"></i> Hay Moulay Rachid 2 ,Diar Salam Imm 303 N°1                                    
-                                </p>
-                               
+                                <i class="fa fa-map-marker" aria-hidden="true"></i><small> Morocco,Casablanca
+                                    20670</small>
+                                <br>
+                                <i class="fa fa-home" aria-hidden="true"></i> Hay Moulay Rachid 2 ,Diar Salam Imm 303
+                                N°1
+                            </p>
+
                         </div>
                         <div>
                             <h3>Horaire</h3>
                             <p>
                                 <small><i class="fa fa-calendar" aria-hidden="true"></i> Monday - Friday</small>
                                 <br>
-                                <i class="fa fa-clock-o" aria-hidden="true"></i> From 8:00 Am to 16:30 Pm 
+                                <i class="fa fa-clock-o" aria-hidden="true"></i> From 8:00 Am to 16:30 Pm
                             </p>
                         </div>
                         <div>
@@ -181,21 +243,61 @@
                             <p>
                                 <span><i class="fa fa-phone" aria-hidden="true"></i> +1 414-334-221</span><br>
                                 <span><i class="fa fa-envelope" aria-hidden="true"></i> cesar@gmail.com</span><br>
-    
+
                             </p>
                         </div>
+                    </div>
+                    <div class="frame">
+                        <img class="dots" src="./imgs/dots-lg.svg" alt="" srcset="">
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.348480578797!2d-7.564859402555256!3d33.570300211357896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cde12b5f7871%3A0x9973cca0108f874a!2sDiar%20essalam!5e0!3m2!1sfr!2sma!4v1641481955670!5m2!1sfr!2sma"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
                 </div>
-                <img class="dots" src="./imgs/dots-lg.svg" alt="" srcset="">
-                <div class="frame">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.348480578797!2d-7.564859402555256!3d33.570300211357896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cde12b5f7871%3A0x9973cca0108f874a!2sDiar%20essalam!5e0!3m2!1sfr!2sma!4v1641481955670!5m2!1sfr!2sma"
-                        width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+
             </div>
         </div>
     </div>
     <!-- End Map -->
 
+    <div class="test"></div>
+
+    <!-- Start Contact -->
+    <div class="large-padding">
+        <div class="contact" id="contact">
+            <div class="container">
+                <h1 class="main-heading" s-heading="Contact">Contact</h1>
+                <div>
+                    <form action="">
+                        <label for="u-email">
+                            <span>Email Address *</span><br>
+                            <input type="email" name="" id="u-email" required>
+                        </label>
+                        <br>
+                        <label for="u-subject">
+                            <span>Subject *</span><br>
+                            <input type="text" name="" id="u-subject" required>
+                        </label>
+                        <br>
+                        <label for="u-msg">
+                            <span>Message *</span><br>
+                            <textarea name="" id="u-msg" cols="30" rows="10"></textarea>
+                        </label>
+                        <br>
+
+                        <div class="btn-form">
+                            <input type="submit" value="Send">
+                            <input type="reset" value="Erase">
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Contact -->
 
     <!-- My Script -->
     <script src="./script.js"></script>

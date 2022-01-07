@@ -65,14 +65,12 @@ more_button.onclick = function (event) {
 
     if (paragraph_bio.classList.contains("p-more")) {
         more_button.innerHTML = "Read Less";
-        more_button.style.backgroundColor = "white";
-        more_button.style.color = "black";
-        more_button.style.border = "1px solid black";
+        more_button.style.backgroundColor = "indianred";
+        more_button.style.color = "white";
     } else {
         more_button.innerHTML = "Read More";
         more_button.style.backgroundColor = "black";
         more_button.style.color = "white";
-        more_button.style.border = "none";
 
     }
 

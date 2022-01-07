@@ -9,12 +9,12 @@ h1 {
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 hr {
     margin: 5px 0px;
-    width: 20%;
+    width: 135px;
     border: 1px solid black;
     position: relative;
 }
@@ -31,6 +31,13 @@ hr:before {
 
 }
 
+.flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
 
 .centering {
     display: flex;
@@ -54,6 +61,7 @@ hr:before {
     transition: .5s;
     margin-top: 10px;
     position: relative;
+    z-index: 1;
 }
 
 .button:before {
@@ -62,9 +70,10 @@ hr:before {
     left: 0;
     bottom: 0;
     width: 0%;
-    height: 2px;
-    background-color: white;
+    height: 100%;
+    background-color: indianred;
     transition: .3s;
+    z-index: -1;
 }
 
 
@@ -80,7 +89,7 @@ hr:before {
 
 .main-heading {
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-size: 4vw;
     text-align: center;
     z-index: 2;
@@ -123,11 +132,7 @@ hr:before {
 
 
 .large-padding {
-    padding: 40px 0;
-}
-
-.small-padding {
-    padding: 20px 0;
+    padding: 80px 0;
 }
 
 .to-top {
@@ -142,6 +147,11 @@ hr:before {
     text-decoration: none;
     font-size: 25px;
     visibility: hidden;
+    transition: .5s;
+}
+
+.to-top:hover {
+    background-color: indianred;
 }
 
 html {
@@ -511,22 +521,23 @@ nav .copyright {
 /* Start About */
 .about {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: white;
     position: relative;
+
 }
 
 .about .bio {
 
-    width: 50%;
-    float: right;
+    width: 400px;
+    margin: 10px;
 
 }
 
 .about .img-bio {
-    width: 45%;
+    width: 400px;
     height: 400px;
-    float: left;
+    margin: 10px;
     overflow: hidden;
     position: relative;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -650,19 +661,9 @@ nav .copyright {
     font-weight: bold;
     font-size: 20px;
     position: relative;
+    color: indianred;
 }
 
-.b-quote span::before {
-    content: "";
-    width: 100px;
-    height: 15px;
-    background-color: indianred;
-    position: absolute;
-    top: 50%;
-    left: 45%;
-    z-index: -1;
-    transform: translateX(-50%);
-}
 
 .b-quote blockquote:before {
     content: "\f10e";
@@ -687,42 +688,119 @@ nav .copyright {
 
 /* End Quotes */
 
+/* Start Skills */
+.skills {
+    background-color: white;
+}
+
+.skills .item {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
+
+}
+
+.skills .item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    outline: 2px solid white;
+    outline-offset: -5.4px;
+}
+
+.skills .item::after {
+    content: attr(percent);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    font-size: 30px;
+    transform: translate(-50%,200%);
+    font-weight: bold;
+    transition: .5s;
+=}
+
+.skills .row {
+    padding: 40px 0;
+}
+
+.skills .item img {
+    filter: invert();
+    width: 60px;
+    height: 60px;
+    transition: .5s;
+}
+
+.skills .item:hover{
+    background-color: indianred;
+}
+
+.skills .item:hover img {
+    transform: translateY(-200%);
+}
+
+.skills .item:hover::after{
+    transform: translate(-50%,-50%);
+}
+
+
+/* End Skills */
+
 /* Start Map */
 
 
 .map {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     background-color: white;
     position: relative;
+
 }
 
 .map .where-find-me {
-    float: left;
-    width: 50%;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 350px;
-}
-.map .where-find-me h3{
-    font-size: 16px;
+    height: 400px;
+    margin: 10px;
 }
 
-.map .where-find-me p{
+.map .where-find-me h3 {
+    font-size: 16px;
+    background: black;
+    color: white;
+    width: 100px;
+    padding: 4px;
+    text-align: center;
+    position: relative;
+}
+
+.map .where-find-me p {
     width: 90%;
     padding-left: 10px;
+    margin: 8px 0;
 }
 
 
 
 .map .frame {
-    float: right;
-    width: 50%;
+    width: 500px;
     height: 400px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     z-index: 1;
     position: relative;
+    margin: 10px;
+
 
 }
 
@@ -730,10 +808,88 @@ nav .copyright {
     width: 200px;
     height: 500px;
     position: absolute;
-    right: 133px;
-    top: 69px;
-    z-index: 1;
+    right: -82px;
+    top: -116px;
+    z-index: -1;
 }
 
 
 /* End Map */
+.test {
+    background-color: black;
+    height: 300px;
+}
+
+
+/* Start Contact */
+.contact {
+    width: 100%;
+    background-color: white;
+
+}
+
+.contact label {
+    font-weight: 600;
+}
+
+.contact input {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    outline: none;
+    background: white;
+    border: 1px solid black;
+    color: black;
+    padding: 8px 20px;
+
+
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: 1px solid black;
+}
+
+.contact textarea {
+    max-width: 100%;
+    max-height: 200px;
+    border: none;
+    outline: none;
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+    padding: 8px 20px;
+
+}
+
+.contact form {
+    margin: 0 auto;
+    display: block;
+    width: 50%;
+}
+
+.contact .btn-form {
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.contact .btn-form input {
+    width: 100px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    border: none;
+
+}
+
+.contact .btn-form input:first-of-type {
+    width: 150px;
+}
+
+.contact .btn-form input:hover {
+    background-color: indianred;
+}
+
+/* End Contact */
