@@ -672,22 +672,24 @@ nav .copyright {
 
 .b-quote blockquote:before {
     content: "\f10e";
-    font-family: FontAwesome;
+    font-family:"Font Awesome 5 Free";
     font-size: 40px;
     position: absolute;
     right: -75px;
     bottom: -15px;
     color: white;
+    font-weight: 900;
 }
 
 .b-quote blockquote:after {
     content: "\f10d";
-    font-family: FontAwesome;
+    font-family:"Font Awesome 5 Free";
     font-size: 40px;
     position: absolute;
     left: -75px;
     top: -15px;
     color: white;
+    font-weight: 900;
 }
 
 
@@ -806,9 +808,52 @@ nav .copyright {
 
 
 /* End Map */
-.test {
-    background-color: black;
-    height: 300px;
+.cms {
+
+    background-color: indianred;
+    position: relative;
+    padding: 50px 0;
+    color: white;
+}
+
+.cms .flex{
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+
+.cms .cms-item {
+	width: 290px;
+	height: 210px;
+	background-color: transparent;
+	text-align: center;
+	border: 2px solid white;
+	border-radius: 8px;
+	flex-direction: column;
+	padding: 20px;
+    margin: 10px 0;
+    position: relative;
+    transition: .5s;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.cms .cms-item:hover{
+    transform: translateY(-14px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+
+.cms .cms-item .icon {
+	font-size: 50px;
+	position: absolute;
+    top: -44px;
+    	background: indianred;
+	padding: 0 8px;
+}
+
+.cms .cms-item  h3{
+    text-transform: uppercase;
+
 }
 
 
