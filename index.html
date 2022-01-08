@@ -42,7 +42,7 @@
 
                 <!-- Toggle Button In Sidebar -->
                 <div class="toggle" title="Sidebar Navigation">
-                    <i class="fa fa-square" aria-hidden="true"></i>
+                    <i class="fa fa-square" aria-hidden="true"></i> Sidebar
                 </div>
 
                 <div class="info-users">
@@ -106,10 +106,10 @@
     <!-- End Header -->
 
     <!-- Start  About -->
-    <div class="large-padding">
-        <div class="about" id="about">
+    <div id="about" class="large-padding">
+        <div class="about" >
             <div class="container">
-                <h1 class="main-heading" s-heading="About me">About Me</h1>
+                <h1 class="main-heading" s-heading="About">About</h1>
                 <img class="dots" src="./imgs/dots-lg.svg" alt="">
 
                 <div class="flex">
@@ -156,24 +156,20 @@
 
     <!-- Start Skills -->
 
-    <div class="large-padding">
-        <div class="skills" id="skills">
+    <div id="skills" class="large-padding">
+        <div class="skills" >
             <div class="container">
                 <h1 class="main-heading" s-heading="Skills">Skills</h1>
                 <h2 class="heading-2">FrontEnd</h2>
                 <hr>
-                <div class="flex row">
+                <div class="flex row frontend">
 
-                    <div class="item centering"  percent="85%" ><img src="./imgs/icons/html.png" alt="HTML5"></div>
-                    <div class="item centering" percent="60%"><img src="./imgs/icons/css.png" alt="CSS3"></div>
-                    <div class="item centering" percent="45%"><img src="./imgs/icons/js.png" alt="Javascript"></div>
-
-
-                    <div class="flex">
-                        <div class="item centering" percent="80%"><img src="./imgs/icons/bootstrap.png" alt="bootstrap"></div>
-                        <div class="item centering" percent="65%"><img src="./imgs/icons/sass.png" alt="Sass"></div>
-                        <div class="item centering" percent="40%"><img src="./imgs/icons/react.png" alt="React"></div>
-                    </div>
+                    <div class="item centering"  percent="HTML5 85%" ><img src="./imgs/icons/html.png" alt="HTML5"></div>
+                    <div class="item centering" percent="CSS3 60%"><img src="./imgs/icons/css.png" alt="CSS3"></div>
+                    <div class="item centering" percent="JS 45%"><img src="./imgs/icons/js.png" alt="Javascript"></div>
+                    <div class="item centering" percent="BootStrap 80%"><img src="./imgs/icons/bootstrap.png" alt="bootstrap"></div>
+                    <div class="item centering" percent="SASS 65%"><img src="./imgs/icons/sass.png" alt="Sass"></div>
+                    <div class="item centering" percent="React 40%"><img src="./imgs/icons/react.png" alt="React"></div>
 
                 </div>
 
@@ -182,20 +178,19 @@
 
                 <h2 class="heading-2">BackEnd</h2>
                 <hr>
-                <div class="flex row">
-                    <div class="item centering" percent="55%"><img src="./imgs/icons/php.png" alt="PHP"></div>
-                    <div class="item centering" percent="66%"><img src="./imgs/icons/python.png" alt="Python"></div>
-                    <div class="item centering" percent="75%"><img src="./imgs/icons/mysql.png" alt="Mysql"></div>
+                <div class="flex row backend">
+                    <div class="item centering" percent="PHP 55%"><img src="./imgs/icons/php.png" alt="PHP"></div>
+                    <div class="item centering" percent="Python 66%"><img src="./imgs/icons/python.png" alt="Python"></div>
+                    <div class="item centering" percent="Mysql 75%"><img src="./imgs/icons/mysql.png" alt="Mysql"></div>
                 </div>
 
                 <h2 class="heading-2">Other Tools</h2>
                 <hr>
-                <div class="flex row">
-                    <div class="item centering" percent="70%"><img src="./imgs/icons/api.png" alt="API"></div>
-                    <div class="item centering" percent="85%"><img src="./imgs/icons/json.png" alt="Json"></div>
-                    <div class="item centering" percent="90%"><img src="./imgs/icons/github.png" alt="Github"></div>
+                <div class="flex row other-tools">
+                    <div class="item centering" percent="API 70%"><img src="./imgs/icons/api.png" alt="API"></div>
+                    <div class="item centering" percent="JSON 85%"><img src="./imgs/icons/json.png" alt="Json"></div>
+                    <div class="item centering" percent="Github 90%"><img src="./imgs/icons/github.png" alt="Github"></div>
                 </div>
-
 
             </div>
         </div>
@@ -206,12 +201,60 @@
     <div class="test"></div>
 
     <!-- Start Map -->
-    <div class="large-padding">
-        <div class="map" id="find-me">
+    <div id="find-me" class="large-padding">
+        <div class="map" >
             <div class="container">
                 <h1 class="main-heading" s-heading="Find me">Find Me</h1>
 
                 <div class="flex">
+                    <div class="frame">
+                        <img class="dots" src="./imgs/dots-lg.svg" alt="" srcset="">
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.348480578797!2d-7.564859402555256!3d33.570300211357896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cde12b5f7871%3A0x9973cca0108f874a!2sDiar%20essalam!5e0!3m2!1sfr!2sma!4v1641481955670!5m2!1sfr!2sma"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End Map -->
+
+    <!-- Start Contact -->
+    <div  id="contact" class="large-padding">
+        <div class="contact">
+            <div class="container">
+
+
+                <h2 class="heading-2">Contact Me</h2>
+                <hr>
+
+                <div class="flex">
+                    <form action="">
+                        <label for="u-email">
+                            <span>Email Address *</span><br>
+                            <input type="email" name="" id="u-email" required>
+                        </label>
+                        <br>
+                        <label for="u-subject">
+                            <span>Subject *</span><br>
+                            <input type="text" name="" id="u-subject" required>
+                        </label>
+                        <br>
+                        <label for="u-msg">
+                            <span>Message *</span><br>
+                            <textarea name="" id="u-msg" cols="30" rows="10"></textarea>
+                        </label>
+                        <br>
+
+                        <div class="btn-form flex">
+                            <input type="submit" value="Send">
+                            <input type="reset" value="Erase">
+                        </div>
+
+
+                    </form>
                     <div class="where-find-me">
                         <div>
                             <h2 class="heading2">Where Can you Find Me ?</h2>
@@ -247,52 +290,6 @@
                             </p>
                         </div>
                     </div>
-                    <div class="frame">
-                        <img class="dots" src="./imgs/dots-lg.svg" alt="" srcset="">
-
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.348480578797!2d-7.564859402555256!3d33.570300211357896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7cde12b5f7871%3A0x9973cca0108f874a!2sDiar%20essalam!5e0!3m2!1sfr!2sma!4v1641481955670!5m2!1sfr!2sma"
-                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- End Map -->
-
-    <div class="test"></div>
-
-    <!-- Start Contact -->
-    <div class="large-padding">
-        <div class="contact" id="contact">
-            <div class="container">
-                <h1 class="main-heading" s-heading="Contact">Contact</h1>
-                <div>
-                    <form action="">
-                        <label for="u-email">
-                            <span>Email Address *</span><br>
-                            <input type="email" name="" id="u-email" required>
-                        </label>
-                        <br>
-                        <label for="u-subject">
-                            <span>Subject *</span><br>
-                            <input type="text" name="" id="u-subject" required>
-                        </label>
-                        <br>
-                        <label for="u-msg">
-                            <span>Message *</span><br>
-                            <textarea name="" id="u-msg" cols="30" rows="10"></textarea>
-                        </label>
-                        <br>
-
-                        <div class="btn-form">
-                            <input type="submit" value="Send">
-                            <input type="reset" value="Erase">
-                        </div>
-
-
-                    </form>
                 </div>
             </div>
         </div>
