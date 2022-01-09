@@ -178,13 +178,13 @@ html {
 
 /* Start Top Bar */
 .top-bar {
-	width: 100%;
-	background: transparent;
-	position: fixed;
-	top: 0;
-	left: 0;
-	z-index: 90;
-	padding: 18px 0;
+    width: 100%;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 90;
+    padding: 18px 0;
     transition: .5s;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -223,7 +223,7 @@ header {
 }
 
 
-header::before{
+header::before {
     content: "";
     width: 100%;
     height: 100%;
@@ -232,7 +232,7 @@ header::before{
     left: 0;
     background: rgba(0, 0, 0, 0.8);
     z-index: -1;
-        filter: grayscale(100%);
+    filter: grayscale(100%);
 
 }
 
@@ -247,7 +247,7 @@ header::before{
 
 .text-header h1 {
     font-size: 5vw;
-        position: relative;
+    position: relative;
 }
 
 .text-header span {
@@ -266,12 +266,12 @@ header::before{
     margin: 0 20px 20px 0;
 }
 
-.text-header a{
+.text-header a {
     font-size: 20px;
 }
 
 
-header  .text-header .s-media  {
+header .text-header .s-media {
     margin-top: 50px;
     display: flex;
     list-style: none;
@@ -279,7 +279,7 @@ header  .text-header .s-media  {
     justify-content: space-between;
 }
 
-header .text-header .s-media  li {
+header .text-header .s-media li {
     width: 40px;
     height: 40px;
     background-color: indianred;
@@ -293,7 +293,7 @@ header .text-header .s-media  li {
 
 }
 
-header .text-header .s-media  li:hover {
+header .text-header .s-media li:hover {
     background-color: #fff;
     transform: scale(1.1);
 }
@@ -303,9 +303,9 @@ header .text-header .s-media li:hover a {
 
 }
 
-header .text-header .s-media  li a {
+header .text-header .s-media li a {
     color: white;
-} 
+}
 
 
 
@@ -434,23 +434,23 @@ nav .copyright {
 
 
 .toggle {
-	width: 40px;
-	height: 40px;
-	background: #000;
-	position: absolute;
-	top: 20px;
-	left: 223px;
-	color: white;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 20px;
-	cursor: pointer;
-	z-index: 99999;
-	/* transform: rotate(0.75turn); */
+    width: 40px;
+    height: 40px;
+    background: #000;
+    position: absolute;
+    top: 20px;
+    left: 223px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 99999;
+    /* transform: rotate(0.75turn); */
 }
 
-.toggle i{
+.toggle i {
     font-size: 16px;
     margin: 5px;
 }
@@ -606,7 +606,7 @@ nav .copyright {
 
 .b-quote blockquote:before {
     content: "\f10e";
-    font-family:"Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free";
     font-size: 40px;
     position: absolute;
     right: -75px;
@@ -617,7 +617,7 @@ nav .copyright {
 
 .b-quote blockquote:after {
     content: "\f10d";
-    font-family:"Font Awesome 5 Free";
+    font-family: "Font Awesome 5 Free";
     font-size: 40px;
     position: absolute;
     left: -75px;
@@ -635,7 +635,7 @@ nav .copyright {
     position: relative;
 }
 
-.skills::before{
+.skills::before {
     content: "";
     position: absolute;
     right: 50px;
@@ -648,15 +648,15 @@ nav .copyright {
 }
 
 .skills .item {
-	width: 140px;
-	height: 140px;
-	background-color: indianred;
-	color: white;
-	margin: 5px;
-	user-select: none;
-	position: relative;
-	overflow: hidden;
-	transition: .5s;
+    width: 140px;
+    height: 140px;
+    background-color: indianred;
+    color: white;
+    margin: 5px;
+    user-select: none;
+    position: relative;
+    overflow: hidden;
+    transition: .5s;
     border-radius: 5px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -678,7 +678,7 @@ nav .copyright {
     left: 50%;
     color: white;
     font-size: 25px;
-    transform: translate(-50%,200%);
+    transform: translate(-50%, 200%);
     font-weight: bold;
     transition: .5s;
     text-align: center;
@@ -699,13 +699,13 @@ nav .copyright {
     transform: translateY(-200%);
 }
 
-.skills .item:hover::after{
-    transform: translate(-50%,-50%);
+.skills .item:hover::after {
+    transform: translate(-50%, -50%);
 }
 
 .skills .frontend,
 .skills .backend,
-.skills .other-tools{
+.skills .other-tools {
     justify-content: flex-start;
 }
 
@@ -750,44 +750,51 @@ nav .copyright {
     position: relative;
     padding: 50px 0;
     color: white;
+    transition: .5s;
 }
 
-.cms .flex{
+.cms .flex {
     justify-content: space-evenly;
     margin-top: 30px;
 }
 
 
 .cms .cms-item {
-	width: 290px;
-	height: 210px;
-	background-color: transparent;
-	text-align: center;
-	border: 2px solid white;
-	border-radius: 8px;
-	flex-direction: column;
-	padding: 20px;
+    width: 290px;
+    height: 210px;
+    background-color: transparent;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 8px;
+    flex-direction: column;
+    padding: 20px;
     margin: 10px 0;
     position: relative;
     transition: .5s;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
 }
 
-.cms .cms-item:hover{
+.cms:hover .cms-item {
+    filter: blur(2px);
+}
+
+.cms .cms-item:hover {
     transform: translateY(-14px);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    filter: none;
 }
 
 
 .cms .cms-item .icon {
-	font-size: 50px;
-	position: absolute;
+    font-size: 50px;
+    position: absolute;
     top: -44px;
-    	background: indianred;
-	padding: 0 8px;
+    background: indianred;
+    padding: 0 8px;
 }
 
-.cms .cms-item  h3{
+.cms .cms-item h3 {
     text-transform: uppercase;
 
 }
@@ -801,24 +808,25 @@ nav .copyright {
     position: relative;
     filter: grayscale(100%);
 }
-#contact::before{
+
+#contact::before {
     content: "";
     width: 100%;
     height: 100%;
     position: absolute;
     left: 0;
     top: 0;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-#contact::after{
+#contact::after {
     content: "";
     width: 100%;
     height: 50%;
     position: absolute;
     left: 0;
     bottom: 0;
-    background: linear-gradient(to top , #000,transparent);
+    background: linear-gradient(to top, #000, transparent);
 }
 
 
@@ -910,20 +918,20 @@ nav .copyright {
     z-index: 1;
 }
 
-.contact  h2{
+.contact h2 {
     color: white;
     z-index: 1;
-position: relative;
+    position: relative;
 
 }
 
-.contact hr{
+.contact hr {
 
     border-color: white;
     margin-bottom: 20px;
 }
 
-.contact hr::before{
+.contact hr::before {
     background-color: #fff;
 }
 
