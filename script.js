@@ -1,5 +1,8 @@
 // To Top Button
 let toTop = document.querySelector(".to-top");
+// Top bar 
+let top_bar = document.querySelector(".top-bar");
+
 
 window.onscroll = function () {
 
@@ -17,6 +20,14 @@ window.onscroll = function () {
     }
 
 
+    if(window.pageYOffset > 100){
+        top_bar.style.backgroundColor = "white"
+    }else{
+        top_bar.style.backgroundColor = "transparent"
+
+    }
+
+
 }
 
 
@@ -29,16 +40,6 @@ let toggler = document.querySelector(".toggle");
 toggler.onclick = function () {
 
     nav.classList.toggle("show-nav");
-
-
-    if (nav.classList.contains("show-nav")) {
-        toggler.firstElementChild.classList.add("fa-square-o");
-        toggler.firstElementChild.classList.remove("fa-square");
-    } else {
-        toggler.firstElementChild.classList.add("fa-square");
-        toggler.firstElementChild.classList.remove("fa-square-o");
-    }
-
 }
 
 // On press Escape Nav will quit

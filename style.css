@@ -52,7 +52,7 @@ hr:before {
 
 .button {
     display: inline-block;
-    padding: 10px 70px;
+    padding: 10px 50px;
     background-color: #000;
     color: white;
     text-decoration-line: none;
@@ -175,6 +175,38 @@ html {
     color: #fff;
 }
 
+
+/* Start Top Bar */
+.top-bar {
+	width: 100%;
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 90;
+	padding: 18px 0;
+    transition: .5s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+.logo {
+
+    font-size: 20px;
+    background-color: black;
+    padding: 5px 10px;
+    color: indianred;
+}
+
+.logo span {
+    color: white;
+    font-variant: small-caps;
+}
+
+
+/* End Top Bar */
+
+
 /* Start Header */
 
 header {
@@ -182,180 +214,45 @@ header {
     height: 100vh;
     width: 100%;
     color: white;
-}
-
-
-header .logo {
-    position: absolute;
-    top: 20px;
-    left: 50%;
-    z-index: 1;
-    transform: translateX(-50%);
-    font-size: 20px;
-    background-color: black;
-    padding: 5px 10px;
-    color: indianred;
-}
-
-header .logo::before {
-    position: absolute;
-    content: '';
-    top: 50%;
-    left: -25px;
-    width: 20px;
-    height: 1px;
-    background-color: white;
-    transform: translateY(-50%);
-}
-
-header .logo::after {
-    position: absolute;
-    content: '';
-    top: 50%;
-    right: -25px;
-    width: 20px;
-    height: 1px;
-    background-color: black;
-    transform: translateY(-50%);
-}
-
-header .logo span {
-    color: white;
-    font-variant: small-caps;
-}
-
-header .s-media {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    z-index: 1;
-    transform: translate(-50%, -50%);
-
-}
-
-header .s-media ul {
+    background: url(./imgs/wall.jpg);
+    background-size: cover;
     display: flex;
-    flex-direction: column;
-    list-style: none;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(0 0, 100% 0, 100% 86%, 0% 100%);
 }
 
-header .s-media ul li {
-    width: 40px;
-    height: 40px;
-    background-color: black;
-    margin-bottom: 5px;
-    cursor: pointer;
-    text-align: center;
-    line-height: 2;
-    font-size: 18px;
-    transition: .3s;
-    transform: scale(.9);
 
-}
-
-header .s-media ul li:hover {
-    background-color: #fff;
-    transform: scale(1.1);
-}
-
-header .s-media ul li:hover a {
-    color: #000;
-
-}
-
-header .s-media ul li a {
-    color: white;
-}
-
-header .left {
-    background: url('./imgs/profile.jpg');
-    background-size: cover;
-    width: 50%;
-    height: 100vh;
-    float: left;
-    position: relative;
-
-}
-
-header .left::before {
+header::before{
     content: "";
+    width: 100%;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.82);
-}
-
-header .right {
-    background: url(./imgs/wall1.jpg);
-    background-size: cover;
-    /* background-color: #fff; */
-    width: 50%;
-    height: 100vh;
-    float: right;
-    color: black;
-    padding: 40px;
-    position: relative;
-    filter: grayscale(100%);
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+        filter: grayscale(100%);
 
 }
 
-header .right::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.8);
-
-}
-
-header .right .r-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
-}
 
 
-header .right .r-content img {
-    width: 100px;
-    height: 100px;
-    display: block;
-    margin: 0 auto;
-    animation: up_down 2s linear alternate infinite;
-}
-
-@keyframes up_down {
-    from {
-        transform: translateY(0px);
-    }
-
-    to {
-        transform: translateY(-10px);
-
-    }
-}
-
-
-/* Text In Left Side */
+/* Text In Header */
 
 .text-header {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
+    width: 50%;
+    position: relative;
 }
 
 .text-header h1 {
-    font-size: 50px;
+    font-size: 5vw;
+        position: relative;
 }
 
 .text-header span {
     position: absolute;
-    top: -20px;
+    top: -30px;
     font-size: 17px;
     text-transform: capitalize;
     font-weight: lighter;
@@ -366,14 +263,51 @@ header .right .r-content img {
 
 
 .text-header p {
-    width: 400px;
     margin: 0 20px 20px 0;
 }
 
-.text-header .button {
-    margin: 0;
-    padding: 10px 40px;
+.text-header a{
+    font-size: 20px;
 }
+
+
+header  .text-header .s-media  {
+    margin-top: 50px;
+    display: flex;
+    list-style: none;
+    width: 200px;
+    justify-content: space-between;
+}
+
+header .text-header .s-media  li {
+    width: 40px;
+    height: 40px;
+    background-color: indianred;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 2;
+    font-size: 18px;
+    transition: .3s;
+    transform: scale(.9);
+
+}
+
+header .text-header .s-media  li:hover {
+    background-color: #fff;
+    transform: scale(1.1);
+}
+
+header .text-header .s-media li:hover a {
+    color: #000;
+
+}
+
+header .text-header .s-media  li a {
+    color: white;
+} 
+
+
 
 /* Sidebar Navigation */
 nav {
@@ -500,12 +434,12 @@ nav .copyright {
 
 
 .toggle {
-	width: 128px;
+	width: 40px;
 	height: 40px;
 	background: #000;
 	position: absolute;
-	top: 60px;
-	left: 156px;
+	top: 20px;
+	left: 223px;
 	color: white;
 	display: flex;
 	justify-content: center;
@@ -513,7 +447,7 @@ nav .copyright {
 	font-size: 20px;
 	cursor: pointer;
 	z-index: 99999;
-	transform: rotate(0.75turn);
+	/* transform: rotate(0.75turn); */
 }
 
 .toggle i{
@@ -716,7 +650,7 @@ nav .copyright {
 .skills .item {
 	width: 140px;
 	height: 140px;
-	background-color: white;
+	background-color: indianred;
 	color: white;
 	margin: 5px;
 	user-select: none;
@@ -724,24 +658,25 @@ nav .copyright {
 	overflow: hidden;
 	transition: .5s;
     border-radius: 5px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;}
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 
 .skills .item::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50%;
     height: 100%;
-    outline: 2px solid white;
-    outline-offset: -5px;}
+    background-color: rgba(255, 255, 255, 0.1);
+}
 
 .skills .item::after {
     content: attr(percent);
     position: absolute;
     top: 50%;
     left: 50%;
-    color: black;
+    color: white;
     font-size: 25px;
     transform: translate(-50%,200%);
     font-weight: bold;
@@ -757,6 +692,7 @@ nav .copyright {
     width: 60px;
     height: 60px;
     transition: .5s;
+    filter: invert();
 }
 
 .skills .item:hover img {
